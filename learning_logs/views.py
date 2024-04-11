@@ -16,6 +16,10 @@ def topics(request):
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
 
+def about(request):
+    """Display the About page."""
+    return render(request, 'learning_logs/about.html')
+
 @login_required
 def topic(request, topic_id):
     """Show a single topic and all its entries."""
