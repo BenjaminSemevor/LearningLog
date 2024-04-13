@@ -43,6 +43,7 @@ To set up and run the project locally, follow these steps:
 
     
     git clone [https://github.com/Paree2512/LearningLog.git]
+    
     cd LearningLog
     
 
