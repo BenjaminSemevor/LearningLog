@@ -16,9 +16,7 @@ This project was developed as part of my portfolio for Holberton School, demonst
 
 ## Project Landing Page
 
-The Learning Log application is live and accessible online everywhere. You can visit the project landing page here:
-
-[Project Landing Page](https://alx-learning-log-c9e00c5290dd.herokuapp.com/landing_page/)
+The Learning Log application is live and accessible online everywhere. You can visit the project landing page here: [Project Landing Page](https://alx-learning-log-c9e00c5290dd.herokuapp.com/landing_page/)
 
 ![Landing Page Screenshot](landing_page.png)
 
