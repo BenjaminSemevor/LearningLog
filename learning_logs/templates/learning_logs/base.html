@@ -4,19 +4,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1,
-    shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Learning Log</title>
 
   {% bootstrap_css %}
   {% bootstrap_javascript jquery='full' %}
+  
+  <style>
+    /* Styles to make the footer stick to the bottom of the page */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensures that the body takes up the full height of the viewport */
+    }
+    main {
+      flex: 1; /* Pushes the footer to the bottom by taking up the remaining space */
+    }
+    .footer {
+      background-color: #f8f9fa; /* Light background color */
+      text-align: center; /* Center text */
+      padding: 10px; /* Padding for spacing */
+      font-size: small; /* Smaller font size */
+      border-top: 1px solid #dee2e6; /* Border on the top */
+    }
+  </style>
 
 </head>
 <body>
 
   <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
 
-    <a class="navbar-brand" href="{% url 'learning_logs:index'%}">
+    <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
         Learning Log</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -26,10 +45,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'learning_logs:topics'%}">
+          <a class="nav-link" href="{% url 'learning_logs:topics' %}">
               Topics</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'learning_logs:about'%}">About</a></li>
+          <a class="nav-link" href="{% url 'learning_logs:about' %}">About</a></li>
       </ul>
       <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
@@ -40,7 +59,7 @@
             <form class="nav-link" action="{% url 'users:logout' %}" method="post">
               {% csrf_token %}
               <button type="submit">Logout</button>
-          </form>
+            </form>
           </li>
         {% else %}
           <li class="nav-item">
@@ -63,6 +82,10 @@
     </div>
   </main>
 
-</body>
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="text-muted">&copy; 2024 Learning Log. All rights reserved.</span>
+  </footer>
 
+</body>
 </html>

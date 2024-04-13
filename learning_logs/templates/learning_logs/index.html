@@ -1,16 +1,23 @@
 {% extends "learning_logs/base.html" %}
 
 {% block page_header %}
+  <style>
+    /* Style for centering content in the jumbotron */
+    .jumbotron {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 70vh;
+    }
+  </style>
   <div class="jumbotron">
     <h1 class="display-3">Track your learning.</h1>
-
     <p class="lead">Create your own Learning Log to track 
       your learning journey! Jot down the subjects you're 
       diving into, and whenever you discover something new, 
-      add a quick entry summarizing your findings. It's an 
-      easy way to see your progress and stay inspired!.</p>
-
-    <!--<a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
-        role="button">Register &raquo;</a>-->
+      add a quick entry summarizing your findings. It's an easy 
+      way to see your progress and stay inspired!.</p>
   </div>
 {% endblock page_header %}
