@@ -37,7 +37,10 @@
             <span class="navbar-text">Hello, {{ user.username }}.</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:logout' %}">Log out</a>
+            <form class="nav-link" action="{% url 'users:logout' %}" method="post">
+              {% csrf_token %}
+              <button type="submit">Logout</button>
+          </form>
           </li>
         {% else %}
           <li class="nav-item">
