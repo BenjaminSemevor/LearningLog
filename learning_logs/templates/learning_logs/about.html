@@ -1,49 +1,42 @@
 {% extends "learning_logs/base.html" %}
 
 {% block page_header %}
-  <h1>About Learning Log</h1>
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">About Learning Log</h1>
+    </div>
+</div>
 {% endblock page_header %}
 
 {% block content %}
+<div class="container mt-4">
     <!-- Reference to Eric Matthes' book -->
-  <p class="mt-4">This project was inspired by the learning methods 
-    outlined in <em>Python Crash Course</em> by Eric Matthes. His 
-    book provided valuable insights and examples that guided the 
-    development of this application.</p>
+    <div class="mb-4">
+        <p>This project was inspired by the learning methods outlined in <em>Python Crash Course</em> by Eric Matthes. His book provided valuable insights and examples that guided the development of this application.</p>
+    </div>
 
-  <p>The inspiration for the Learning Log project stems from a 
-    personal need for a centralized space to organize my learning 
-    journey effectively. As a lifelong learner with a wide array 
-    of interests, I often found myself overwhelmed by the vast 
-    amount of information and topics I was engaging with. Keeping 
-    track of notes, resources, and insights across various subjects 
-    became a challenge, especially as I juggled multiple projects 
-    and studies simultaneously.</p>
-    
-    <p>To address this issue, I decided to create a simple, user-friendly 
-    web application using Django that allows me to log my learning topics 
-    and entries in one place. This way, I can easily revisit and expand 
-    on previous learnings, identify patterns in my studies, and track my 
-    progress over time. The project has become an invaluable tool in my 
-    learning process, helping me stay organized and focused.</p>
-    
-    </p>In addition to serving my personal learning needs, I wanted to develop 
-    the Learning Log project as part of my portfolio for Holberton School. 
-    This project demonstrates my skills in building full-stack web applications 
-    and showcases my ability to create functional, user-centric solutions using 
-    Django. It is my hope that the Learning Log project will resonate with 
-    others facing similar challenges in managing their learning journey and serve 
-    as a helpful tool for anyone seeking to stay organized in their educational pursuits.</p>
-    
+    <!-- Description of the Learning Log project -->
+    <div class="mb-4">
+        <p>The inspiration for the Learning Log project stems from a personal need for a centralized space to organize my learning journey effectively. As a lifelong learner with a wide array of interests, I often found myself overwhelmed by the vast amount of information and topics I was engaging with. Keeping track of notes, resources, and insights across various subjects became a challenge, especially as I juggled multiple projects and studies simultaneously.</p>
+
+        <p>To address this issue, I decided to create a simple, user-friendly web application using Django that allows me to log my learning topics and entries in one place. This way, I can easily revisit and expand on previous learnings, identify patterns in my studies, and track my progress over time. The project has become an invaluable tool in my learning process, helping me stay organized and focused.</p>
+    </div>
+
+    <!-- Portfolio project description -->
+    <div class="mb-4">
+        <p>In addition to serving my personal learning needs, I wanted to develop the Learning Log project as part of my portfolio for Holberton School. This project demonstrates my skills in building full-stack web applications and showcases my ability to create functional, user-centric solutions using Django. It is my hope that the Learning Log project will resonate with others facing similar challenges in managing their learning journey and serve as a helpful tool for anyone seeking to stay organized in their educational pursuits.</p>
+    </div>
+
     <!-- Buttons for LinkedIn, GitHub, and Twitter profiles -->
-  <div class="mt-4">
-    <a href="https://www.linkedin.com/in/benjamin-semevor-1762395a/" class="btn btn-primary mr-2" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Paree2512" class="btn btn-dark mr-2" target="_blank">GitHub</a>
-    <a href="https://twitter.com/BenSemsGh" class="btn btn-info" target="_blank">Twitter</a>
-  </div>
+    <div class="d-flex flex-wrap mb-4">
+        <a href="https://www.linkedin.com/in/benjamin-semevor-1762395a/" class="btn btn-primary mr-2 mb-2" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Paree2512" class="btn btn-dark mr-2 mb-2" target="_blank">GitHub</a>
+        <a href="https://twitter.com/BenSemsGh" class="btn btn-info mb-2" target="_blank">Twitter</a>
+    </div>
 
-  <!-- Button for the GitHub repository -->
-  <div class="mt-4">
-    <a href="https://github.com/Paree2512/LearningLog" class="btn btn-success" target="_blank">Learning Log GitHub Repository</a>
-  </div>
+    <!-- Button for the GitHub repository -->
+    <div>
+        <a href="https://github.com/Paree2512/LearningLog" class="btn btn-success" target="_blank">Learning Log GitHub Repository</a>
+    </div>
+</div>
 {% endblock content %}

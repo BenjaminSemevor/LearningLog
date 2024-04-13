@@ -6,6 +6,8 @@ from . import views
 
 app_name = 'learning_logs'
 urlpatterns = [
+    # Landing page
+    path('landing_page/', views.landing_page, name='landing_page'),
     # Home page
     path('', views.index, name='index'),
     # Page that shows all topics.

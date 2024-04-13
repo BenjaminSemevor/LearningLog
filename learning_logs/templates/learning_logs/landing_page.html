@@ -1,0 +1,56 @@
+{% extends "learning_logs/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Intro Section -->
+<section id="intro-section" class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Learning Log</h1>
+        <p class="lead">A simple web application to organize your learning topics and entries</p>
+        <a href="{% url 'learning_logs:index' %}" class="btn btn-primary btn-lg">Explore Learning Log</a>
+    </div>
+</section>
+
+<!-- Feature Section -->
+<section id="feature-section" class="container mt-5">
+    <h2 class="text-center mb-4">Key Features</h2>
+    
+    <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="card-title">Register</h3>
+                <p class="card-text">Create a user account and start using learning logs.</p>
+            </div>
+                <img src="{% static 'register.png' %}" alt="Feature 1" class="card-img-top">
+            </div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="card-title">Add Topics</h3>
+                <p class="card-text">Add topics on what you've studied.</p>
+            </div>
+                <img src="{% static 'add_topics.png' %}" alt="Feature 2" class="card-img-top">
+            </div>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="col-md-10 mx-auto">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="card-title">Add Entries</h3>
+                <p class="card-text">Add and edit your entries efficiently.</p>
+            </div>
+                <img src="{% static 'add_entries.png' %}" alt="Feature 3" class="card-img-top">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

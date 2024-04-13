@@ -5,6 +5,10 @@ from django.http import Http404
 from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
 
+def landing_page(request):
+    """Render the landing page for the Learning Log application."""
+    return render(request, 'learning_logs/landing_page.html')
+
 def index(request):
     """The home page for Learning Log."""
     return render(request, 'learning_logs/index.html')
